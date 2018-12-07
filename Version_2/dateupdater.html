@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Date Parameter</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <script src="dateupdater.js"></script>
+    <script src="tableau-extensions-0.latest.js"></script>
+    <script>
+    </script>
+
+</head>
+
+<body onload='hideBoth()'>
+    <a href="#"><i class="fas fa-cog" onclick="configure()"></i></a>
+	
+		 <h4>Please Click on the Setting Icon to change values<span class="sheet_name" id="choose_sheet_title"></span></h4>	
+
+		 <select className="form-control" id="pickparam12" style="width:100%;" onChange="hola(this.value)">
+		 <option value='Latest Date'>Latest Date</option>
+								   <option value='Current Fiscal Week'>Current Fiscal Week</option>
+								   <option value='Current Fiscal Month'>Current Fiscal Month</option>
+								   <option value='Current Fiscal Quarter'>Current Fiscal Quarter</option>
+								   <option value='Current Fiscal Season'>Current Fiscal Season</option>
+								   <option value='Current Fiscal Year'>Current Fiscal Year</option>
+								   <option value='Fiscal Week'>Fiscal Week</option>
+								   <option value='Fiscal Month'>Fiscal Month</option>
+						           <option value='Fiscal Year'>Fiscal Year</option>
+								   <option value='Fiscal Quarter'>Fiscal Quarter</option>
+								   <option value='Fiscal Season'>Fiscal Season</option>
+								   <option value='Custom Dates'>Custom Dates</option>
+								  </select>  
+								   
+								   		 <select className="form-control" id="Year" style="width:100%;">
+											<option value='Year'>Year</option>
+											<option value='2016'>2016</option>
+											<option value='2017'>2017</option>
+											<option value='2018'>2018</option>
+											<option value='2019'>2019</option>
+								</select>    
+								   
+								   		 <select className="form-control" id="month" style="width:100%;">
+											<option value='Month'>Month</option>
+											<option value='January'>January</option>
+											<option value='February'>February</option>
+											<option value='March'>March</option>
+											<option value='April'>April</option>
+											<option value='May'>May</option>
+											<option value='June'>June</option>
+											<option value='July'>July</option>
+											<option value='August'>August</option>
+											<option value='September'>September</option>
+											<option value='October'>October</option>
+											<option value='November'>November</option>
+											<option value='December'>December</option>
+								</select>
+								   
+								   		 <select className="form-control" id="Week" style="width:100%;">
+											<option value='Week'>Week</option>
+											<option value='1'>1</option>
+											<option value='2'>2</option>
+											<option value='3'>3</option>
+											<option value='4'>4</option>
+											<option value='5'>5</option>
+								</select>
+								
+								   		 <select className="form-control" id="Quarter" style="width:100%;">
+											<option value='Quarter'>Quarter</option>
+											<option value='1'>1</option>
+											<option value='2'>2</option>
+											<option value='2'>3</option>
+											<option value='2'>4</option>
+								</select>
+								<select className="form-control" id="season" style="width:100%;">
+											<option value='season'>season</option>
+											<option value='Spring'>Spring</option>
+											<option value='January'>Fall</option>
+											
+								</select>
+	
+</body>
+
+</html>
