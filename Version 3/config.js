@@ -12,7 +12,7 @@ function getParams() {
         let c = 0;
         for (let p of params) {
 			// Take all the parameters
-            if (p.name   === 'Select Time Period New' || p.name === 'Fiscal Year ' || p.name === 'Fiscal Month ' || p.name === 'Fiscal Week ' || p.name === 'Fiscal Quarter ' || p.name === 'Season ') {
+            if (p.name   === 'Select Time Period New' || p.name === 'Fiscal Year ' || p.name === 'Fiscal Month ' || p.name === 'Fiscal Week ' || p.name === 'Fiscal Quarter ' || p.name === 'Season ' || p.name === 'Custom Start Date' || p.name === 'Custom End Date') {
 			
                 options += `<option value='${p.name}'>${p.name}</option>`;
 				//options += '${p.name}'
